@@ -20,7 +20,9 @@ if [ "$apps" = "y" ]; then
         wl-clipboard \
         cliphist \
         hyprland \
-        dunst
+        dunst \
+        kitty \
+        fastfetch
 fi
 
 if [ "$dots" = "y" ]; then
