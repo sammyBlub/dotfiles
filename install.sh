@@ -7,8 +7,8 @@ BACKUP="$HOME/.config_backup"
 
 echo "ooo install dotfiles ooo"
 
-read -p "Install Hyprland apps? (y/n): " apps
-read -p "Install dotfiles? (y/n): " dots
+read -p "install cool apps? (y/n): " apps
+read -p "install the coolest configs? (y/n): " dots
 
 if [ "$apps" = "y" ]; then
     sudo pacman -Sy --noconfirm \
