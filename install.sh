@@ -19,7 +19,8 @@ if [ "$apps" = "y" ]; then
         slurp \
         wl-clipboard \
         cliphist \
-        hyprland
+        hyprland \
+        dunst
 fi
 
 if [ "$dots" = "y" ]; then
