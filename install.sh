@@ -5,7 +5,7 @@ DIR="$HOME/.dotfiles"
 CONFIG="$HOME/.config"
 BACKUP="$HOME/.config_backup"
 
-echo "Arch Hypr dotfiles installer"
+echo "ooo install dotfiles ooo"
 
 read -p "Install Hyprland apps? (y/n): " apps
 read -p "Install dotfiles? (y/n): " dots
