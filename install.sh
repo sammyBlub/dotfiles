@@ -1,7 +1,8 @@
+#!/bin/bash
 set -e
 
 REPO="https://github.com/sammyBlub/dotfiles.git"
-DIR="$HOME/.dotfiles"
+DIR="$HOME/sammyfiles"
 CONFIG="$HOME/.config"
 BACKUP="$HOME/.config_backup"
 
@@ -26,17 +27,31 @@ if [ "$apps" = "y" ]; then
 fi
 
 if [ "$dots" = "y" ]; then
-    [ -d "$DIR" ] || git clone "$REPO" "$DIR"
+    if [ ! -d "$DIR" ]; then
+        git clone "$REPO" "$DIR"
+    fi
 
     mkdir -p "$BACKUP"
 
     for f in "$DIR/.config/"*; do
         name=$(basename "$f")
 
-        [ -e "$CONFIG/$name" ] && mv "$CONFIG/$name" "$BACKUP/"
+        if [ -e "$CONFIG/$name" ]; then
+            mv "$CONFIG/$name" "$BACKUP/"
+        fi
 
-        ln -sf "$f" "$CONFIG/$name"
+        cp -rp "$f" "$CONFIG/$name"
     done
+
+    if [ -f "$DIR/.bashrc" ]; then
+        if [ -f "$HOME/.bashrc" ]; then
+            mv "$HOME/.bashrc" "$HOME/bashrc.bak"
+        fi
+        cp -p "$DIR/.bashrc" "$HOME/.bashrc"
+        echo "ooo .bashrc copied yay."
+    else
+        echo "evil .bashrc has been deleted oh no"
+    fi
 
     echo "Done."
 fi
