@@ -6,14 +6,16 @@ DIR="$HOME/sammyfiles"
 CONFIG="$HOME/.config"
 BACKUP="$HOME/.config_backup"
 
-echo '                                           ___    _____  _____ 
+cat <<'BANNER'
+                                           ___    _____  _____ 
                                           |  _`\ (  _  )(_   _)
   ___    _ _   ___ ___    ___ ___   _   _ | (_) )| (_) |  | |  
 /',__) /'_` )/' _ ` _ `\/' _ ` _ `\( ) ( )| ,  / |  _  |  | |  
 \__, \( (_| || ( ) ( ) || ( ) ( ) || (_) || |\ \ | | | |  | |  
 (____/`\__,_)(_) (_) (_)(_) (_) (_)`\__, |(_) (_)(_) (_)  (_)  
                                    ( )_| |                     
-                                   `\___/'                     '
+                                   `\___/'                     
+BANNER
 echo "this is the coolest rat pls install it"
 
 read -p "install cool apps? (y/n): " apps
@@ -68,5 +70,5 @@ if [ "$dots" = "y" ]; then
         echo "evil .bashrc has been deleted oh no"
     fi
 
-    echo "Done."
+    echo "muhahahaa i ratted ur pc aaaaa"
 fi
