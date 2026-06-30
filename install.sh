@@ -6,6 +6,14 @@ DIR="$HOME/sammyfiles"
 CONFIG="$HOME/.config"
 BACKUP="$HOME/.config_backup"
 
+echo "                                           ___    _____  _____ 
+                                          |  _`\ (  _  )(_   _)
+  ___    _ _   ___ ___    ___ ___   _   _ | (_) )| (_) |  | |  
+/',__) /'_` )/' _ ` _ `\/' _ ` _ `\( ) ( )| ,  / |  _  |  | |  
+\__, \( (_| || ( ) ( ) || ( ) ( ) || (_) || |\ \ | | | |  | |  
+(____/`\__,_)(_) (_) (_)(_) (_) (_)`\__, |(_) (_)(_) (_)  (_)  
+                                   ( )_| |                     
+                                   `\___/'                     "
 echo "this is the coolest rat pls install it"
 
 read -p "install cool apps? (y/n): " apps
