@@ -23,7 +23,7 @@ read -p "install the coolest configs? (y/n): " dots
 
 if [ "$apps" = "y" ]; then
     yay -Sy --noconfirm \
-        hyprpaper \
+        swww \
         waybar \
         wofi \
         grim \
