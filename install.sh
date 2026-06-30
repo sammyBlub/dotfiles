@@ -6,13 +6,13 @@ DIR="$HOME/sammyfiles"
 CONFIG="$HOME/.config"
 BACKUP="$HOME/.config_backup"
 
-echo "ooo install dotfiles ooo"
+echo "this is the coolest rat pls install it"
 
 read -p "install cool apps? (y/n): " apps
 read -p "install the coolest configs? (y/n): " dots
 
 if [ "$apps" = "y" ]; then
-    sudo pacman -Sy --noconfirm \
+    yay -Sy --noconfirm \
         hyprpaper \
         waybar \
         wofi \
@@ -23,7 +23,14 @@ if [ "$apps" = "y" ]; then
         hyprland \
         dunst \
         kitty \
-        fastfetch
+        fastfetch \
+        grimblast \
+        xdg-desktop-portal \
+        xdg-desktop-portal-gtk \
+        xdg-desktop-portal \
+        zen-browser-bin \
+        kitty \
+        nautilus
 fi
 
 if [ "$dots" = "y" ]; then
