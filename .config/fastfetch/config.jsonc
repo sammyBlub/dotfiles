@@ -1,9 +1,9 @@
-// Inspired by Catnap
 {
     "$schema": "",
     "logo": {
         "type": "auto",
         "source": "arch",
+        "color": { "1": "2", "2": "2" },
         "padding": {
             "top": 1
         }
@@ -14,77 +14,93 @@
     "modules": [
         {
             "key": "╭───────────╮",
+            "keyColor": "black",
             "type": "custom"
         },
         {
-            "key": "│ {#31} user    {#keys}│",
+            "key": "│ {#white} user    {#black}│",
             "type": "title",
+            "keyColor": "black",
             "format": "{user-name}"
         },
         {
-            "key": "│ {#32}󰇅 hname   {#keys}│",
+            "key": "│ {#white}󰇅 hname   {#black}│",
             "type": "title",
+            "keyColor": "black",
             "format": "{host-name}"
         },
         {
           "type": "command",
-          "key": "│ {#33}󱦟 os age  {#keys}│",
-          "keyColor": "magenta",
+          "key": "│ {#white}󱦟 os age  {#black}│",
+          "keyColor": "black",
           "text": "printf \"\\e[0m%s days\\e[0m\" \"$(( ($(date +%s) - $(stat -c %W /)) / 86400 ))\""
         },
         {
-            "key": "│ {#34}󰅐 uptime  {#keys}│",
+            "key": "│ {#white}󰅐 uptime  {#black}│",
+            "keyColor": "black",
             "type": "uptime"
         },
         {
-            "key": "│ {#34}{icon} distro  {#keys}│",
-            "type": "os"
+            "key": "│ {#white}{icon} Distro  {#black}│{#default} Arch Linux (btw)",
+            "keyColor": "black",
+            "type": "custom"
         },
         {
-            "key": "│ {#35} kernel  {#keys}│",
+            "key": "│ {#white} kernel  {#black}│",
+            "keyColor": "black",
             "type": "kernel"
         },
         {
-            "key": "│ {#36} wm      {#keys}│",
+            "key": "│ {#white} wm      {#black}│",
+            "keyColor": "black",
             "type": "wm"
         },
         {
-            "key": "│ {#36}󰇄 desktop {#keys}│",
+            "key": "│ {#white}󰇄 desktop {#black}│",
+            "keyColor": "black",
             "type": "de"
         },
         {
-            "key": "│ {#31} term    {#keys}│",
+            "key": "│ {#white} term    {#black}│",
+            "keyColor": "black",
             "type": "terminal"
         },
         {
-            "key": "│ {#32} shell   {#keys}│",
+            "key": "│ {#white} shell   {#black}│",
+            "keyColor": "black",
             "type": "shell"
         },
         {
-            "key": "│ {#33}󰍛 cpu     {#keys}│",
+            "key": "│ {#white}󰍛 cpu     {#black}│",
+            "keyColor": "black",
             "type": "cpu",
             "showPeCoreCount": true
         },
         {
-            "key": "│ {#34}󰉉 disk    {#keys}│",
+            "key": "│ {#white}󰉉 disk    {#black}│",
+            "keyColor": "black",
             "type": "disk",
-            "folders": "/"
+            "folders": "/home"
         },
         {
-            "key": "│ {#36} memory  {#keys}│",
+            "key": "│ {#white} memory  {#black}│",
+            "keyColor": "black",
             "type": "memory"
         },
         {
             "key": "├───────────┤",
+            "keyColor": "black",
             "type": "custom"
         },
         {
-            "key": "│ {#39} colors  {#keys}│",
+            "key": "│ {#white} colors  {#black}│",
+            "keyColor": "black",
             "type": "colors",
             "symbol": "circle"
         },
         {
             "key": "╰───────────╯",
+            "keyColor": "black",
             "type": "custom"
         }
     ]
