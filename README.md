@@ -1,7 +1,8 @@
 # The Sammy (dot)Files
 this is for personal backup. 
 ## Preview
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8ba1e7e9-a296-49b6-b8c1-82537f313310" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2e13a5d5-a690-49f4-9cbe-6705e029cfa4" />
+
 
 
 
