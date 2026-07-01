@@ -25,7 +25,7 @@ if [ "$apps" = "y" ]; then
     yay -Sy --noconfirm \
         swww \
         waybar \
-        wofi \
+        tofi \
         grim \
         slurp \
         wl-clipboard \
